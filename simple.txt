@@ -1,0 +1,93 @@
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop
+$ mkdir basic_repo
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop
+$ cd basic_repo/
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop/basic_repo
+$ touch index.html style.css
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop/basic_repo
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop/basic_repo
+$ git init
+Initialized empty Git repository in C:/Users/andgarcia/Desktop/basic_repo/.git/
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop/basic_repo (master)
+$ git add .
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop/basic_repo (master)
+$ git commit -m "Initial commit"
+[master (root-commit) b3b9a15] Initial commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+ create mode 100644 style.css
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop/basic_repo (master)
+$ code index.html
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop/basic_repo (master)
+$ code style.css
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop/basic_repo (master)
+$ git add .
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop/basic_repo (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+        modified:   style.css
+
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop/basic_repo (master)
+$ git commit -m "Added content to index.html and style.css"
+[master 2142086] Added content to index.html and style.css
+ 2 files changed, 15 insertions(+)
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop/basic_repo (master)
+$ git remote add origin https://github.com/eduardoagarcia79/basic_repo.git
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop/basic_repo (master)
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 732 bytes | 244.00 KiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/eduardoagarcia79/basic_repo.git
+ * [new branch]      master -> master
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop/basic_repo (master)
+$ code index.html
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop/basic_repo (master)
+$ code style.css
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop/basic_repo (master)
+$ git add .
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop/basic_repo (master)
+$ git commit -m "changes to index.html and style.css"
+[master 705d04e] changes to index.html and style.css
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop/basic_repo (master)
+$ git push origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 498 bytes | 498.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/eduardoagarcia79/basic_repo.git
+   2142086..705d04e  master -> master
+
+andgarcia@93H1YT2 MINGW64 ~/Desktop/basic_repo (master)
+$
